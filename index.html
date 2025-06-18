@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المصمم الذكي | عثمان الغول - دورة الذكاء الاصطناعي للتصميم الداخلي</title>
+  <meta name="description" content="أول دورة فلسطينية متخصصة في الذكاء الاصطناعي للمصممين الداخليين - عثمان الغول مدرب دولي بخبرة 8+ سنوات">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+    
+    .bg-gradient-gold {
+      background: linear-gradient(135deg, #FFD700, #FFA500);
+    }
+    
+    .text-gradient-gold {
+      background: linear-gradient(45deg, #FFD700, #FFA500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .glow-gold {
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+    }
+    
+    .hover-glow:hover {
+      box-shadow: 0 0 40px rgba(255, 215, 0, 0.7);
+      transform: translateY(-2px);
+    }
+    
+    .bg-overlay {
+      background: rgba(0, 0, 0, 0.7);
+    }
+    
+    .parallax-bg {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    @media (max-width: 768px) {
+      .parallax-bg {
+        background-attachment: scroll;
+      }
+    }
+    
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-out;
+    }
+    
+    .animate-slide-up {
+      animation: slideUp 0.8s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from { 
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to { 
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .gallery-item {
+      transition: all 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: scale(1.05) translateY(-10px);
+    }
+    
+    .logo-glow {
+      filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6));
+    }
+    
+    .btn-primary {
+      background: linear-gradient(45deg, #FFD700, #FFA500);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background: linear-gradient(45deg, #FFA500, #FFD700);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900"></div>
+    <div class="absolute inset-0 bg-overlay"></div>
+    
+    <!-- Animated Background Elements -->
+    <div class="absolute top-10 left-10 w-20 h-20 bg-yellow-400 rounded-full opacity-10 animate-pulse"></div>
+    <div class="absolute bottom-20 right-20 w-32 h-32 bg-yellow-500 rounded-full opacity-5 animate-bounce"></div>
+    <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-yellow-300 rounded-full opacity-10 animate-ping"></div>
+    
+    <div class="relative z-10 text-center px-4 animate-fade-in">
+      <!-- Logo Section -->
+      <div class="mb-8">
+        <div class="text-8xl md:text-9xl font-bold text-gradient-gold logo-glow mb-4">
+          OG
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold text-gradient-gold mb-2">المصمم الذكي</h1>
+        <p class="text-xl md:text-2xl text-gray-300 mb-8">عثمان الغول | Interior Design</p>
+      </div>
+      
+      <!-- Profile Info -->
+      <div class="mb-12 animate-slide-up">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">مصمم داخلي وباحث ماجستير</h2>
+        <p class="text-lg md:text-xl text-gray-400 mb-2">مدرب دولي بخبرة 8+ سنوات</p>
+        <p class="text-lg text-gray-400">تصميم حديث • وسطا عقاري • تصميم داخلي</p>
+      </div>
+      
+      <!-- CTA Button -->
+      <div class="animate-slide-up">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVqXbDZdKG3Ji8q9K9jnC4hArJxdvQ8Ocan45_tR-Lzm2Wnw/viewform" 
+           target="_blank" 
+           class="btn-primary text-black px-8 py-4 rounded-full text-lg font-bold hover-glow inline-flex items-center space-x-3 space-x-reverse">
+          <i class="fas fa-user-plus"></i>
+          <span>سجّل الآن في الدورة</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <i class="fas fa-chevron-down text-yellow-400 text-2xl"></i>
+    </div>
+  </section>
+  
+  <!-- About Course Section -->
+  <section class="py-20 bg-gray-800 relative">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-gradient-gold mb-8">
+          <i class="fas fa-graduation-cap mr-4"></i>
+          عن الدورة
+        </h2>
+        <div class="bg-gray-900 p-8 rounded-2xl border border-yellow-400 border-opacity-30 glow-gold">
+          <p class="text-xl md:text-2xl leading-relaxed text-gray-300">
+            أول دورة فلسطينية متخصصة في الذكاء الاصطناعي للمصممين الداخليين. 
+            تعلم كيف تستخدم أدوات مثل <span class="text-yellow-400 font-semibold">Midjourney، COOHOM، Veras، Genspark، Flo، Manus</span> 
+            وغيرها لتطوير تصاميمك ورفع كفاءتك كمحترف في عالم التصميم الداخلي.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-bold text-gradient-gold text-center mb-16">
+        <i class="fas fa-star mr-4"></i>
+        مميزات الدورة
+      </h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-gray-800 p-8 rounded-2xl border border-yellow-400 border-opacity-30 hover-glow text-center transition-all duration-300">
+          <i class="fas fa-robot text-5xl text-yellow-400 mb-6"></i>
+          <h3 class="text-xl font-bold text-yellow-400 mb-4">أدوات الذكاء الاصطناعي</h3>
+          <p class="text-gray-300">تعلم استخدام أحدث أدوات الذكاء الاصطناعي في التصميم الداخلي</p>
+        </div>
+        
+        <div class="bg-gray-800 p-8 rounded-2xl border border-yellow-400 border-opacity-30 hover-glow text-center transition-all duration-300">
+          <i class="fas fa-certificate text-5xl text-yellow-400 mb-6"></i>
+          <h3 class="text-xl font-bold text-yellow-400 mb-4">شهادة معتمدة</h3>
+          <p class="text-gray-300">احصل على شهادة معتمدة دولياً في نهاية الدورة</p>
+        </div>
+        
+        <div class="bg-gray-800 p-8 rounded-2xl border border-yellow-400 border-opacity-30 hover-glow text-center transition-all duration-300">
+          <i class="fas fa-users text-5xl text-yellow-400 mb-6"></i>
+          <h3 class="text-xl font-bold text-yellow-400 mb-4">تدريب عملي</h3>
+          <p class="text-gray-300">تطبيق عملي مباشر على مشاريع حقيقية</p>
+        </div>
+        
+        <div class="bg-gray-800 p-8 rounded-2xl border border-yellow-400 border-opacity-30 hover-glow text-center transition-all duration-300">
+          <i class="fas fa-headset text-5xl text-yellow-400 mb-6"></i>
+          <h3 class="text-xl font-bold text-yellow-400 mb-4">دعم مستمر</h3>
+          <p class="text-gray-300">دعم ومتابعة مستمرة من المدرب طوال فترة الدورة</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Portfolio Section -->
+  <section class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-bold text-gradient-gold text-center mb-16">
+        <i class="fas fa-play-circle mr-4"></i>
+        أعمالنا ومشاريعنا
+      </h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="https://www.instagram.com/reel/C3NirbdiR_y/" target="_blank" 
+           class="gallery-item block relative rounded-2xl overflow-hidden group">
+          <img src="https://cdn1.genspark.ai/user-upload-image/v1/webpage_capture_screen_tool_call/aa527254-e69e-4439-b660-5f625d30c572" 
+               alt="ريل تسويقي عثمان الغول" 
+               class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="fas fa-play text-yellow-400 text-4xl"></i>
+          </div>
+        </a>
+        
+        <a href="https://www.instagram.com/reel/DEhZVuiCmaZ/" target="_blank" 
+           class="gallery-item block relative rounded-2xl overflow-hidden group">
+          <img src="https://cdn1.genspark.ai/user-upload-image/v1/webpage_capture_screen_tool_call/ad97b246-3acc-4703-8fbe-69b6843ae6bc" 
+               alt="مشروع تصميم 1" 
+               class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="fas fa-play text-yellow-400 text-4xl"></i>
+          </div>
+        </a>
+        
+        <a href="https://www.instagram.com/reel/DFXp25NirDo/" target="_blank" 
+           class="gallery-item block relative rounded-2xl overflow-hidden group">
+          <img src="https://cdn1.genspark.ai/user-upload-image/v1/webpage_capture_screen_tool_call/dfa4ca22-7223-49ef-8911-b445208cc333" 
+               alt="مشروع تصميم 2" 
+               class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="fas fa-play text-yellow-400 text-4xl"></i>
+          </div>
+        </a>
+        
+        <a href="https://www.instagram.com/reel/Cx8fLo-I3fe/" target="_blank" 
+           class="gallery-item block relative rounded-2xl overflow-hidden group">
+          <img src="https://cdn1.genspark.ai/user-upload-image/v1/webpage_capture_screen_tool_call/50aaa4cc-1d27-4a46-aa90-41a881b194bf" 
+               alt="مشروع تصميم 3" 
+               class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="fas fa-play text-yellow-400 text-4xl"></i>
+          </div>
+        </a>
+        
+        <a href="https://www.instagram.com/reel/Cx8eKJKoDk_/" target="_blank" 
+           class="gallery-item block relative rounded-2xl overflow-hidden group">
+          <img src="https://cdn1.genspark.ai/user-upload-image/v1/webpage_capture_screen_tool_call/ba845eaf-a67c-45ba-8611-ad4db542dcb9" 
+               alt="مشروع تصميم 4" 
+               class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="fas fa-play text-yellow-400 text-4xl"></i>
+          </div>
+        </a>
+        
+        <a href="https://www.instagram.com/reel/Cx8dv1TI1pt/" target="_blank" 
+           class="gallery-item block relative rounded-2xl overflow-hidden group">
+          <img src="https://cdn1.genspark.ai/user-upload-image/v1/webpage_capture_screen_tool_call/6011c9a7-faad-47ae-bae7-e46f74cace3b" 
+               alt="مشروع تصميم 5" 
+               class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <i class="fas fa-play text-yellow-400 text-4xl"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section class="py-20 bg-gradient-to-t from-gray-900 to-gray-800">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-gradient-gold mb-8">
+        <i class="fas fa-phone mr-4"></i>
+        تواصل معنا
+      </h2>
+      <p class="text-xl text-gray-300 mb-12">نحن هنا لمساعدتك في رحلتك التعليمية</p>
+      
+      <!-- Social Icons -->
+      <div class="flex justify-center space-x-8 space-x-reverse mb-12">
+        <a href="https://wa.me/message/OYBO2UJZXBGUJ1" target="_blank" 
+           class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-300 hover-glow">
+          <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+        <a href="https://instagram.com/othmanghoul" target="_blank" 
+           class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-300 hover-glow">
+          <i class="fab fa-instagram text-2xl"></i>
+        </a>
+        <a href="https://facebook.com/OthmanGhoul" target="_blank" 
+           class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center text-yellow-400 hover:bg-yellow-400 hover:text-black transition-all duration-300 hover-glow">
+          <i class="fab fa-facebook text-2xl"></i>
+        </a>
+      </div>
+      
+      <!-- Final CTA -->
+      <div class="border-t border-yellow-400 border-opacity-30 pt-12">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVqXbDZdKG3Ji8q9K9jnC4hArJxdvQ8Ocan45_tR-Lzm2Wnw/viewform" 
+           target="_blank" 
+           class="btn-primary text-black px-10 py-5 rounded-full text-xl font-bold hover-glow inline-flex items-center space-x-3 space-x-reverse">
+          <i class="fas fa-rocket"></i>
+          <span>ابدأ رحلتك الآن - سجل في الدورة</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-black py-8 text-center">
+    <div class="container mx-auto px-4">
+      <p class="text-gray-400">© 2024 عثمان الغول - المصمم الذكي. جميع الحقوق محفوظة.</p>
+      <p class="text-gray-500 text-sm mt-2">+972 598 214 213 | @OthmanGhoul</p>
+    </div>
+  </footer>
+  
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+        }
+      });
+    }, observerOptions);
+    
+    // Observe elements for animation
+    document.querySelectorAll('.gallery-item, .hover-glow').forEach(el => {
+      observer.observe(el);
+    });
+    
+    // Parallax effect
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const parallaxElements = document.querySelectorAll('.parallax-bg');
+      
+      parallaxElements.forEach(element => {
+        const speed = 0.5;
+        const yPos = -(scrolled * speed);
+        element.style.backgroundPosition = `center ${yPos}px`;
+      });
+    });
+    
+    // Add loading states for images
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('load', function() {
+        this.classList.add('animate-fade-in');
+      });
+      
+      img.addEventListener('error', function() {
+        this.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html>
+Commit new file
+إنشاء الموقع
+
